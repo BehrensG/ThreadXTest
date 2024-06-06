@@ -182,7 +182,7 @@ UINT MX_NetXDuo_Init(VOID *memory_ptr)
   }
 
   /* USER CODE BEGIN MX_NetXDuo_Init */
-
+  hislip_CreateTask();
   /* USER CODE END MX_NetXDuo_Init */
 
   return ret;

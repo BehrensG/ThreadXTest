@@ -23,6 +23,7 @@ RM := rm -rf
 -include Core/Src/subdir.mk
 -include Core/SCPI/libscpi/src/subdir.mk
 -include Core/SCPI/subdir.mk
+-include Core/HiSLIP/Src/subdir.mk
 -include AZURE_RTOS/App/subdir.mk
 -include objects.mk
 

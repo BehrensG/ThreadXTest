@@ -23,6 +23,7 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 AZURE_RTOS/App \
+Core/HiSLIP/Src \
 Core/SCPI \
 Core/SCPI/libscpi/src \
 Core/Src \

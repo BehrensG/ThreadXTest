@@ -1,4 +1,5 @@
 "./AZURE_RTOS/App/app_azure_rtos.o"
+"./Core/HiSLIP/Src/HiSLIP.o"
 "./Core/SCPI/SCPI_Def.o"
 "./Core/SCPI/SCPI_Task.o"
 "./Core/SCPI/libscpi/src/error.o"
