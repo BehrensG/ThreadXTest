@@ -73,8 +73,8 @@ all: main-build
 main-build: ThreadXTest.elf secondary-outputs
 
 # Tool invocations
-ThreadXTest.elf ThreadXTest.map: $(OBJS) $(USER_OBJS) /home/grzegorz/git/ThreadXTest/SOFTWARE/STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ThreadXTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/grzegorz/git/ThreadXTest/SOFTWARE/STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ThreadXTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ThreadXTest.elf ThreadXTest.map: $(OBJS) $(USER_OBJS) D:\tmp\ThreadXTest\SOFTWARE\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ThreadXTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\tmp\ThreadXTest\SOFTWARE\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ThreadXTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
